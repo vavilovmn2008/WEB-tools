@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./main.js"></script>   
+    <!-- <script src="./calcButton.js"></script> -->
+    <audio src="https://github.com/goldfire/howler.js"></audio>
+    <title>Калькулятор дат</title>
+</head>
+<body> 
+    <h1>Калькулятор дат</h1>
+    <form id="dateDiffForm">
+        <label for="dateFrom">
+            Первая дата:
+            <input type="date" name ="dateFrom" id="dateFrom">            
+        </label>
+        <label for="dateTo">
+            Вторая дата:
+            <input type="date" name ="dateTo" id="dateTo">   
+        </label>
+        <button type="submit">Рассчитать промежуток</button>
+    </form>    
+        <p id="output"></p>    
+        <input type="button" value="Таймер" onmousedown="viewDiv()">
+    <div style =" display: none" id="calc"> 
+        <input type="text" name="time" id="time">
+        <button id="button-start">Запустить</button>
+        <button id="button-stop">Остановить</button>
+        <div id="timer"></div>
+        <script src="script.js"></script>
+    </div>
+   
+</body>
+</html>
