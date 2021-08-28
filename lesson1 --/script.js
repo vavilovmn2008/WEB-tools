@@ -13,7 +13,7 @@ timer = setInterval(function () {
     hour = timeMinut/60/60%60
     if (timeMinut <= 0) {
         clearInterval(timer);
-        alert("Время закончилось");
+        // alert("Время закончилось");
         soundClick();
     } else {
         const strTimer = `${Math.trunc(hour)}:${Math.trunc(minutes)}:${seconds}`;
@@ -26,8 +26,8 @@ buttonStop.addEventListener('click', function () {
 	clearInterval(timer)});
 
     function soundClick () {
-        const audio = new Audio({
-        urls: ['sound.mp3', 'sound.ogg', 'sound.wav'],
-        autoplay: true,
-    })}
+        const audio = new Audio();
+        audio.src= 'Martin_Jacoby_Yiruma_-_River_Flows_in_You_48080718.mp3';
+        audio.autoplay = true;
+    }
 

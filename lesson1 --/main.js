@@ -19,6 +19,6 @@ form.onsubmit = (event) => {
     writeDiffOutput (getDateDiff(dateFrom, dateTo))
    };
 
-console.log(viewDiv);
+   document.addEventListener('click',viewDiv);
   
 
